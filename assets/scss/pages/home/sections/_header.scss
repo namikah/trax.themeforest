@@ -1,0 +1,67 @@
+header {
+  background-image: url("https://trax.acrothemes.com/bootstrap-v5/images/banner1-4.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 600px;
+  position: relative;
+
+  &::after {
+    content: "";
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    opacity: 50%;
+    position: absolute;
+  }
+
+  .header__navbar__flex {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    z-index: 1;
+    background-color: black;
+    opacity: 50%;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 25px;
+    align-items: center;
+  }
+
+  .left__side {
+    a {
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        color: #ffffff57;
+      }
+    }
+  }
+  .right__side {
+    ul {
+      li {
+        display: inline-block;
+        a {
+            align-items: center;
+          text-decoration: none;
+          font-weight: 100;
+          letter-spacing: 2px;
+          transition: 0.3s;
+          color: #ffffff;
+          text-transform: uppercase;
+          font-size: 10px;
+          position: relative;
+          padding: 15px 10px;
+          margin-left: 10px;
+
+          &:hover {
+            color: #ffffffaf;
+          }
+        }
+      }
+    }
+  }
+}

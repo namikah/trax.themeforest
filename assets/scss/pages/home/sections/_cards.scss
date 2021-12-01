@@ -1,0 +1,49 @@
+#section {
+  transform: translateY(-50%);
+
+  .container {
+    .row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .col-4 {
+        text-align: center;
+        align-items: center;
+
+        i {
+          padding: 30px;
+          text-decoration: none;
+          display: block;
+          color: white;
+          font-size: 30px;
+        }
+        a {
+          padding: 30px;
+          color: white;
+          font-weight: 600;
+          text-decoration: none;
+          font-size: 20px;
+        }
+        p {
+          padding: 10px;
+          color: white;
+          padding: 20px;
+        }
+      }
+
+      .card-1 {
+        background-color: #26313c;
+        height: 250px;
+      }
+      .card-2 {
+        background-color: #5192e1;
+        height: 320px;
+      }
+      .card-3 {
+        background-color: #26313c;
+        height: 250px;
+      }
+    }
+  }
+}
