@@ -71,6 +71,7 @@
               font-size: 40px;
               padding-bottom: 15px;
               color: #2e8cf7;
+              transition: .5s;
             }
             h2 {
               font-weight: 500;
@@ -80,17 +81,24 @@
               color: #808080;
               padding-bottom: 15px;
               font-weight: 300;
+              transition: .5s;
             }
             p {
               color: #808080;
               line-height: 25px;
             }
+            &:hover{
+              h2{
+                color: #2e8cf7;
+              }
+              i{
+                transform: translateY(-15%);
+              }
+            }
           }
           .img {
             background-image: url('https://trax.acrothemes.com/bootstrap-v5/images/iphone.png');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
+            @include image-position();
             overflow: hidden;
             margin: 65px;
 

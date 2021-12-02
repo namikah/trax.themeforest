@@ -29,6 +29,10 @@
           border-radius: 30px;
           text-decoration: none;
           color: white;
+          &:hover{
+            transition: .5s;
+            background: linear-gradient(to left, #5192e1, rgb(131, 197, 241));
+          }
         }
         .right-side{
             padding:5px;
