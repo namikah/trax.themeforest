@@ -1,12 +1,10 @@
-#section {
+#cards-info {
   transform: translateY(-50%);
+  padding-left: 50px 0;
 
   .container {
     .row {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
+      @include flex-sb($justify-content:center);
       .col-4 {
         text-align: center;
         align-items: center;

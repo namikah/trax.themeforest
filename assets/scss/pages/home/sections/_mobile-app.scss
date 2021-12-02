@@ -1,0 +1,108 @@
+#mobile-app {
+  padding: 80px 0;
+  .container {
+    .row {
+      @include flex-sb();
+      &.mobile-context {
+        padding-bottom: 40px;
+        .col-6 {
+          text-align: left;
+          h4 {
+            color: #24cdd5;
+            letter-spacing: 1px;
+          }
+          h2 {
+            font-size: 50px;
+            color: #384141;
+            font-weight: normal;
+          }
+          p {
+            color: #384141;
+            font-weight: normal;
+            line-height: 1.7;
+            font-size: 14px;
+            padding: 5px;
+            letter-spacing: 1px;
+          }
+        }
+      }
+      &.mobile-primary {
+        .col-4 {
+          flex-direction: column;
+          @include flex-sb();
+          &.left-side {
+            text-align: right;
+          }
+          &.right-side {
+            text-align: left;
+          }
+          &.middle {
+            position: relative;
+            overflow: hidden;
+            .img {
+              overflow: hidden;
+            }
+            &::after {
+              content: '';
+              position: absolute;
+              transition: 0.5s;
+              border-radius: 50%;
+              width: 35px;
+              height: 35px;
+              border: 3px solid black;
+              bottom: 0;
+              margin-bottom: 70px;
+              cursor: pointer;
+              opacity: 0%;
+            }
+            &:hover {
+              transition: 0.5s;
+              &::after {
+                opacity: 100%;
+                transition: 0.5s;
+                transform: translateY(-80%);
+              }
+            }
+          }
+          .col-12 {
+            cursor: pointer;
+            padding: 25px;
+            i {
+              font-size: 40px;
+              padding-bottom: 15px;
+              color: #2e8cf7;
+            }
+            h2 {
+              font-weight: 500;
+              line-height: 1.2;
+              font-size: 25px;
+              letter-spacing: 1px;
+              color: #808080;
+              padding-bottom: 15px;
+              font-weight: 300;
+            }
+            p {
+              color: #808080;
+              line-height: 25px;
+            }
+          }
+          .img {
+            background-image: url('https://trax.acrothemes.com/bootstrap-v5/images/iphone.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow: hidden;
+            margin: 65px;
+
+            img {
+              padding: 10px;
+              border-radius: 35px;
+              height: 100%;
+              position: relative;
+            }
+          }
+        }
+      }
+    }
+  }
+}

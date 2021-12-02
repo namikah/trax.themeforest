@@ -1,0 +1,99 @@
+#pricing-offers {
+  padding: 150px 0;
+  background-color: #f6f7f8;
+  .container {
+    text-align: center;
+    color: #384141;
+    font-weight: 100;
+    font-family: 'Open Sans', sans-serif;
+    h4 {
+      padding-top: 80px;
+      padding-bottom: 10px;
+      letter-spacing: 1px;
+      color: #24cdd5;
+    }
+    h2 {
+      padding-bottom: 50px;
+      letter-spacing: 1px;
+      font-size: 50px;
+      font-weight: 400;
+    }
+    .monthly-yearly {
+      @include flex-sb($justify-content: center);
+      margin: 0 500px;
+      background-color: white;
+      div {
+        background-color: white;
+        padding: 12px 120px;
+        border-radius: 20px;
+        font-weight: 400;
+        color: #808080;
+      }
+      margin-bottom: 80px;
+    }
+    .row {
+        @include flex-sb();
+      .col-4 {
+          margin: 15px;
+          background-color: white;
+        @include flex-sb();
+        padding: 15px;
+        flex-direction: column;
+        h3 {
+          padding-bottom: 5px;
+        }
+        p {
+          padding-bottom: 30px;
+          border-bottom: 1px solid #808080;
+          width: 80%;
+        }
+        span {
+          font-size: 40px;
+          padding: 30px 0px;
+          font-weight: 100;
+          padding-bottom: 30px;
+          border-bottom: 1px solid #808080;
+          width: 80%;
+        }
+        .btn{
+            padding:10px 40px;
+            margin-bottom: 20px;
+            background-color: #24cdd5;
+            border-radius: 30px;
+            text-decoration: none;
+            color: white;
+        }
+        ul {
+          padding: 30px 0px;
+          line-height: 40px;
+          text-align: left;
+          text-decoration: none;
+          list-style: none;
+          li {
+              position: relative;
+            &::before {
+              content: '\f00c';
+              font-family: 'Font Awesome 5 Free', serif;
+              font-weight: 900;
+              position: absolute;
+              top: 2px;
+              left: -25px;
+              color: #b2cb20;
+            }
+          }
+          .not-include{
+            &::before {
+                content: '\f00d';
+                font-family: 'Font Awesome 5 Free', serif;
+                font-weight: 900;
+                position: absolute;
+                top: 2px;
+                left: -25px;
+                color: red;
+              }
+          }
+        }
+      }
+    }
+  }
+}
